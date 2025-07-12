@@ -63,7 +63,7 @@ const SkillsSection: React.FC = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={category.title}
-              className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl skill-card-pop"
+              className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl hover:border-cyan-500/40 transition-all duration-300"
             >
               <h3 className="text-xl font-bold text-white mb-6 text-center">
                 {category.title}
@@ -79,7 +79,7 @@ const SkillsSection: React.FC = () => {
                   >
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-3">
-                        <skill.icon className={`w-5 h-5 transition-all duration-300 icon-btn-pop ${
+                        <skill.icon className={`w-5 h-5 transition-all duration-300 ${
                           hoveredSkill === `${categoryIndex}-${skillIndex}` 
                             ? 'text-cyan-400 scale-110' 
                             : 'text-gray-400'
@@ -118,7 +118,7 @@ const SkillsSection: React.FC = () => {
             ].map((tech, index) => (
               <div
                 key={tech}
-                className="p-4 bg-gray-800/30 backdrop-blur-sm rounded-lg border border-gray-600 text-center btn-pop cursor-pointer"
+                className="p-4 bg-gray-800/30 backdrop-blur-sm rounded-lg border border-gray-600 text-center hover:border-cyan-500 hover:bg-cyan-500/10 transition-all duration-300 hover:scale-105"
               >
                 <Cpu className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                 <span className="text-gray-300 text-sm font-medium">{tech}</span>

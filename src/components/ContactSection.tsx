@@ -35,7 +35,7 @@ const ContactSection: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl card-pop">
+          <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl">
             <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -48,7 +48,7 @@ const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   placeholder="Your Name"
                   required
-                  className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300 btn-pop"
+                  className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300"
                 />
               </div>
 
@@ -61,7 +61,7 @@ const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   placeholder="Your Email"
                   required
-                  className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all duration-300 btn-pop"
+                  className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/20 transition-all duration-300"
                 />
               </div>
 
@@ -74,13 +74,13 @@ const ContactSection: React.FC = () => {
                   placeholder="Your Message"
                   required
                   rows={5}
-                  className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-400/20 transition-all duration-300 resize-none btn-pop"
+                  className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-400/20 transition-all duration-300 resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg btn-gradient-pop shadow-lg flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-cyan-500/25 flex items-center justify-center"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Message
@@ -90,16 +90,16 @@ const ContactSection: React.FC = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 shadow-2xl card-pop">
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: 'Email', value: 'gggf@gmail.com', color: 'text-cyan-400' },
-                  { icon: Phone, label: 'Phone', value: '4545454', color: 'text-purple-400' },
+                  { icon: Mail, label: 'Email', value: 'orhodox396@gmail.com', color: 'text-cyan-400' },
+                  { icon: Phone, label: 'Phone', value: '9541544045', color: 'text-purple-400' },
                   { icon: MapPin, label: 'Location', value: 'India', color: 'text-pink-400' }
                 ].map((contact, index) => (
-                  <div key={index} className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/30 btn-pop cursor-pointer">
+                  <div key={index} className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/50 transition-colors duration-300">
                     <contact.icon className={`w-6 h-6 ${contact.color}`} />
                     <div>
                       <p className="text-gray-400 text-sm">{contact.label}</p>
@@ -110,7 +110,7 @@ const ContactSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl card-pop">
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
               
               <div className="space-y-4">
@@ -118,7 +118,7 @@ const ContactSection: React.FC = () => {
                   href="https://www.linkedin.com/in/kanav-samotra-568397372"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-4 p-4 rounded-lg bg-blue-500/10 border border-blue-500/20 social-btn-pop"
+                  className="flex items-center space-x-4 p-4 rounded-lg bg-blue-500/10 border border-blue-500/20 hover:border-blue-500/50 transition-all duration-300 hover:scale-105"
                 >
                   <Linkedin className="w-6 h-6 text-blue-400" />
                   <div>
@@ -131,7 +131,7 @@ const ContactSection: React.FC = () => {
                   href="https://github.com/kanavxsamotra"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-4 p-4 rounded-lg bg-purple-500/10 border border-purple-500/20 social-btn-pop"
+                  className="flex items-center space-x-4 p-4 rounded-lg bg-purple-500/10 border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:scale-105"
                 >
                   <Github className="w-6 h-6 text-purple-400" />
                   <div>

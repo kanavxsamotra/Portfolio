@@ -77,8 +77,8 @@ const AboutSection: React.FC = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               <div className="space-y-4">
                 {[
-                  { icon: Mail, label: 'Email', value: 'gggf@gmail.com', color: 'text-cyan-400' },
-                  { icon: Phone, label: 'Phone', value: '4545454', color: 'text-purple-400' },
+                  { icon: Mail, label: 'Email', value: 'orhodox396@gmail.com', color: 'text-cyan-400' },
+                  { icon: Phone, label: 'Phone', value: '9541544045', color: 'text-purple-400' },
                   { icon: MapPin, label: 'Location', value: 'India', color: 'text-pink-400' }
                 ].map((contact, index) => (
                   <div key={index} className="flex items-center space-x-4 p-4 rounded-lg bg-gray-800/30 hover:bg-gray-800/50 transition-colors duration-300">

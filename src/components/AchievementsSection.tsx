@@ -63,15 +63,15 @@ const AchievementsSection: React.FC = () => {
           {achievements.map((achievement, index) => (
             <div
               key={achievement.title}
-              className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-600 card-pop group"
+              className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-600 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105 group"
             >
-              <div className={`w-16 h-16 bg-gradient-to-r ${achievement.color} rounded-xl flex items-center justify-center mb-6 icon-btn-pop`}>
+              <div className={`w-16 h-16 bg-gradient-to-r ${achievement.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <achievement.icon className="w-8 h-8 text-white" />
               </div>
               
               <div className="mb-4">
                 <h3 className="text-xl font-bold text-white mb-2">{achievement.title}</h3>
-                <div className={`inline-block px-3 py-1 bg-gradient-to-r ${achievement.color} rounded-full text-white text-sm font-bold mb-3 btn-pop cursor-pointer`}>
+                <div className={`inline-block px-3 py-1 bg-gradient-to-r ${achievement.color} rounded-full text-white text-sm font-bold mb-3`}>
                   {achievement.metric}
                 </div>
               </div>
@@ -82,7 +82,7 @@ const AchievementsSection: React.FC = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 card-pop">
+        <div className="mt-16 bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
             Professional <span className="text-cyan-400">Impact</span>
           </h3>
@@ -94,7 +94,7 @@ const AchievementsSection: React.FC = () => {
               { label: 'Infrastructure Uptime', value: '99.9%', color: 'text-green-400' },
               { label: 'Cost Optimization', value: '40%', color: 'text-yellow-400' }
             ].map((stat, index) => (
-              <div key={stat.label} className="text-center btn-pop cursor-pointer">
+              <div key={stat.label} className="text-center">
                 <div className={`text-3xl md:text-4xl font-bold ${stat.color} mb-2`}>
                   {stat.value}
                 </div>

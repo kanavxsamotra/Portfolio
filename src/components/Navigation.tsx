@@ -34,7 +34,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onSectionChange 
                 <button
                   key={item.id}
                   onClick={() => onSectionChange(item.id)}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg nav-btn-pop ${
+                  className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
                     activeSection === item.id
                       ? 'bg-cyan-500/20 text-cyan-400 shadow-lg shadow-cyan-500/20'
                       : 'text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10'
@@ -49,7 +49,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onSectionChange 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-cyan-500/20 text-cyan-400 btn-pop"
+              className="md:hidden p-2 rounded-lg bg-cyan-500/20 text-cyan-400 hover:bg-cyan-500/30 transition-colors duration-300"
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -73,7 +73,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onSectionChange 
                   onSectionChange(item.id);
                   setIsMenuOpen(false);
                 }}
-                className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg btn-pop ${
+                className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 ${
                   activeSection === item.id
                     ? 'bg-cyan-500/20 text-cyan-400 shadow-lg shadow-cyan-500/20'
                     : 'text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10'

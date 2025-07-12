@@ -51,11 +51,11 @@ const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">
                 <Mail className="w-5 h-5 text-cyan-400 mr-3" />
-                <span>gggf@gmail.com</span>
+                <span>orhodox396@gmail.com</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Phone className="w-5 h-5 text-magenta-500 mr-3" />
-                <span>4545454</span>
+                <span>9541544045</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <MapPin className="w-5 h-5 text-yellow-400 mr-3" />

@@ -74,7 +74,7 @@ const HeroSection: React.FC = () => {
               </h2>
             </div>
 
-            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl card-pop">
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-cyan-500/20 shadow-2xl">
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Passionate about bridging the gap between development and operations through innovative automation solutions. 
                 Specializing in cloud platforms, containerization technologies, and continuous integration/deployment practices.
@@ -84,7 +84,7 @@ const HeroSection: React.FC = () => {
                 {['DevOps', 'Docker', 'Kubernetes', 'Jenkins', 'Cloud'].map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full text-cyan-400 border border-cyan-500/30 text-sm font-medium btn-pop cursor-pointer"
+                    className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full text-cyan-400 border border-cyan-500/30 text-sm font-medium hover:scale-105 transition-transform duration-300"
                   >
                     {skill}
                   </span>
@@ -97,13 +97,13 @@ const HeroSection: React.FC = () => {
                 href="https://github.com/kanavxsamotra/kanavxsamotra/blob/main/Kanav%20Samotra%20Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg btn-gradient-pop shadow-lg"
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
               </a>
               
-              <button className="inline-flex items-center px-6 py-3 bg-gray-800/50 backdrop-blur-sm text-gray-300 rounded-lg border border-gray-600 btn-pop">
+              <button className="inline-flex items-center px-6 py-3 bg-gray-800/50 backdrop-blur-sm text-gray-300 rounded-lg border border-gray-600 hover:border-cyan-500 hover:text-cyan-400 transition-all duration-300">
                 View Projects
               </button>
             </div>
@@ -126,7 +126,7 @@ const HeroSection: React.FC = () => {
                 </div>
               </div>
               
-              <label className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex items-center justify-center cursor-pointer btn-gradient-pop shadow-lg shadow-cyan-500/25 border-4 border-gray-900">
+              <label className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/25 border-4 border-gray-900">
                 <Upload className="w-6 h-6 text-white" />
                 <input
                   type="file"
